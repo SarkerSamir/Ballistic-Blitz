@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    
+    <link rel="stylesheet" href="index_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/128/three.css3drenderer.min.js"></script> -->
+
+</head>
+
+<body>
+    
+    <script type="module" src="http://localhost:5173/cano.js"></script>
+
+        <div class="container">
+            <div id="scene-container"></div>
+            <div class="overlay">
+                <div class="game-info">
+                    <div class="tank-info">
+                        <div class="tank">
+                            <p id="player1Name" style="color: lightsalmon; font-weight: bolder">Tank Life:<span id="leftTankLife">100</span></p>
+                            <p id="player1Name">Tank Score: <span id="leftTankScore">0</span></p>
+                        </div>
+                        <div class="tank">
+                            <p id="player2Name" style="color: black; font-weight: bolder;">Tank Life: <span id="rightTankLife">100</span></p>
+                            <p id="player2Name">Tank Score: <span id="rightTankScore">0</span></p>
+                        </div>
+                    </div>
+                    <div class="turn-info">
+                       
+                        <p>Turns Left: <span id="maxTurns"></span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="button-overlay">
+                <div class="button-container">
+                    <!-- <button id="shootButton">shoot</button> -->
+                    <div class="buttons-container_speed">
+                        <label>Power:</label>
+                        <button id="increaseSpeed"><i class="fas fa-arrow-up"></i></button>
+                        <b class="value-label">0</b>
+                        <button id="decreaseSpeed"><i class="fas fa-arrow-down"></i></button>
+                    </div>
+                    <div class="buttons-container_angle">
+                        <label>Angle:</label>
+                        <button id="increaseAngle"><i class="fas fa-arrow-up"></i></button>
+                        <b class="value-label">0</b>      
+                        <button id="decreaseAngle"><i class="fas fa-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+           <!--  <div class="game-overlay" id="gameOverOverlay">
+                <div class="overlay-content">
+                    <p><b>Game Over</b></p>
+                    <p><span id="winner">Congratulations Player 1</span> wins!</p>
+                    <p>Score:</p>
+                    <p>Player 1: <span id="player1Score">10</span></p>
+                    <p>Player 2: <span id="player2Score">5</span></p>
+                    <button id="playAgainButton">Play Again</button>
+                    <button id="mainmenuButton">Main Menu</button>
+                </div>
+            </div> -->
+        </div>
+        
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+</body>
+
+</html>

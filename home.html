@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ballistic Blitz</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ballistic Blitz</h1>
+    </header>
+    <main>
+     <div class="button-container">
+      <button class="btn1" id="start-button" onmouseover="playHoverSound()" onclick="playClickSound()">Play</button>
+     <!--  <button class="btn2" id="option-button" onmouseover="playHoverSound()" onclick="playClickSound()">Options</button>
+      <button class="btn3" id="about-button" onmouseover="playHoverSound()" onclick="playClickSound()">About</button>
+      <button class="btn4" id="quit-button" onmouseover="playHoverSound()" onclick="playClickSound()">Quit</button> -->
+     </div> 
+  <div class="overlay" id="inputOverlay">
+      <div class="input-container">
+          <h2>Enter User Information</h2>
+          <div class="player-input">
+              <label for="player1">Player 1:</label>
+              <input type="text" id="player1" placeholder="Enter player 1's name">
+          </div>
+          <div class="player-input">
+              <label for="player2">Player 2:</label>
+              <input type="text" id="player2" placeholder="Enter player 2's name">
+          </div>
+          <div class="turn-input">
+            <label for="turns">Enter Turns:</label>
+            <input type="text" id="turns" placeholder="Enter Max Turns :">
+          </div>
+            <button id="confirmPlayersButton">Confirm</button>
+            <p id="warningMessage" class="hidden">You have to fill up both player names.</p>
+      </div>
+  </div>
+    
+    
+    </main>
+    <footer>
+      <p>© 2023 Ballistic Blitz. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="homescript.js"></script>
+
+</body>
+</html>

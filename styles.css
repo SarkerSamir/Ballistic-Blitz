@@ -1,0 +1,167 @@
+body{
+    background-image: url('images/tankswallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+}    
+    
+body, p {
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #1b0d0d;
+  }
+  
+  header {
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 10px;
+  }
+  
+h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 75px;
+        text-shadow: 3px 3px 6px rgba(141, 41, 18, 0.834);
+    }
+  
+  main {
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+    margin-right: 190px;
+    margin-top: 55px;
+  }
+  
+  .button-container button {
+    font-family: Impact, sans-serif;
+    width: 210px;
+    height: 60px;
+    padding-top: 3px;
+    background-color: transparent;
+    border:none;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #000000e1; 
+    font-size: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  
+  .button-container button:hover {
+    background-color: transparent;
+    color: #000;
+    border: 3px solid black;
+  }
+  
+  .button-container button:active {
+    background-color: transparent;
+  } 
+  
+  footer {
+    margin-top: 300px;
+    text-align: center;
+  }
+  
+  footer p {
+    color: #282828;
+  }
+
+  
+  /* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+#playButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the input container */
+.input-container {
+  background-color: white;
+  align-items: center;
+  margin-top: 195px;
+  margin-left: 500px;
+  width: 270px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.player-input {
+  margin-bottom: 10px;
+}
+
+.player-input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.player-input input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+
+.turn-input {
+  margin-bottom: 10px;
+}
+
+.turn-input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.turn-input input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#confirmPlayersButton {
+  background-color: #28a745;
+  color: white;
+  margin-top: 15px;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
